@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+button {
+  cursor: pointer;
+}
+
+input, textarea {
+  font-family: inherit;
+}
+
+/* Light Mode Variables */
+:root {
+  --bg-primary: #f8f9ff;
+  --bg-secondary: #ffffff;
+  --bg-navbar: #ffffff;
+  --bg-card: #ffffff;
+  --bg-input: #ffffff;
+  --bg-hover: #f0f2ff;
+  --bg-cork: #f0f2ff;
+  --bg-column: #ffffff;
+
+  --text-primary: #1a1a2e;
+  --text-secondary: #555555;
+  --text-muted: #999999;
+  --text-white: #ffffff;
+
+  --border-color: #e8e8f0;
+  --border-input: #e0e0e0;
+
+  --shadow-sm: 0 1px 4px rgba(0,0,0,0.06);
+  --shadow-md: 0 2px 8px rgba(0,0,0,0.08);
+  --shadow-lg: 0 8px 24px rgba(0,0,0,0.12);
+
+  --accent: #4f46e5;
+  --accent-light: #f0f2ff;
+  --accent-border: #c7d2fe;
+}
+
+/* Dark Mode Variables */
+[data-theme='dark'] {
+  --bg-primary: #0f0f1a;
+  --bg-secondary: #1a1a2e;
+  --bg-navbar: #12121f;
+  --bg-card: #1e1e30;
+  --bg-input: #252538;
+  --bg-hover: #252538;
+  --bg-cork: #16162a;
+  --bg-column: #1e1e30;
+
+  --text-primary: #e8e8ff;
+  --text-secondary: #a0a0c0;
+  --text-muted: #606080;
+  --text-white: #ffffff;
+
+  --border-color: #2a2a45;
+  --border-input: #2a2a45;
+
+  --shadow-sm: 0 1px 4px rgba(0,0,0,0.3);
+  --shadow-md: 0 2px 8px rgba(0,0,0,0.4);
+  --shadow-lg: 0 8px 24px rgba(0,0,0,0.5);
+
+  --accent: #6366f1;
+  --accent-light: #1e1e40;
+  --accent-border: #3730a3;
+}
