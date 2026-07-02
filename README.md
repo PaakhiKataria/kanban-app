@@ -4,9 +4,9 @@
 
 ## 🌐 Live Demo
 
-[Live App](https://kanban-app.vercel.app) *(Coming Soon)*
+[Live App](https://kanban-app-five-iota.vercel.app)
 
-Backend API: *(Coming Soon)*
+Backend API: https://kanban-app-backend-bir4.onrender.com
 
 ---
 
