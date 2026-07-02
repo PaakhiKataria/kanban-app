@@ -11,6 +11,8 @@ const authRoutes = require('./routes/auth')
 const boardRoutes = require('./routes/boards')
 const columnRoutes = require('./routes/columns')
 const cardRoutes = require('./routes/cards')
+const labelRoutes = require('./routes/labels')
+const checklistRoutes = require('./routes/checklist')
 const registerSocketHandlers = require('./socket/index')
 
 const app = express()
@@ -22,10 +24,8 @@ const io = socketio(server, {
   }
 })
 
-app.use(cors())
-
 // Middleware
-app.use(cors({ origin: 'http://localhost:5173' }))
+app.use(cors())
 app.use(express.json())
 
 // Routes
@@ -33,11 +33,7 @@ app.use('/api/auth', authRoutes)
 app.use('/api/boards', boardRoutes)
 app.use('/api/columns', columnRoutes)
 app.use('/api/cards', cardRoutes)
-
-const labelRoutes = require('./routes/labels')
 app.use('/api/labels', labelRoutes)
-
-const checklistRoutes = require('./routes/checklist')
 app.use('/api/checklist', checklistRoutes)
 
 // Test route
